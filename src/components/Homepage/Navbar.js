@@ -3,7 +3,7 @@ import Logo from "@/assets/Homepage/logo.png";
 export default function Navbar(){
     return(
         <>
-            <div className="w-full h-max lg:px-[70px] md:px-[60px] px-[20px] lg:py-[48px] md:py-[40px] py-[20px] bg-[#000000]">
+            <div className="w-full h-max mb-[100px] z-[40] fixed top-0 lg:px-[100px] md:px-[80px] px-[20px] lg:py-[20px] md:py-[20px] py-[20px] bg-[#000000] bg-opacity-75">
 
             <div className="flex flex-row">
               <div className="basis-1/2">
