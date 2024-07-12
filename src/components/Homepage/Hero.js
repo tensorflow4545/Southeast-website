@@ -5,7 +5,7 @@ export default function Hero(){
         <>
             <div className="w-full h-max lg:px-[100px] md:px-[50px] px-[20px] lg:pt-[20px] lg:pb-[40px] md:py-[20px] py-[20px] bg-[#000000]">
 
-            <div className="lg:grid md:grid lg:grid-cols-2 md:grid-cols-2">
+            <div className="lg:grid md:grid lg:grid-cols-2 md:grid-cols-2 lg:mt-[150px] md:mt-[100px] mt-[100px]">
               {/* child */}
               <div className="lg:mt-[80px] md:mt-[40px]">
               <h1 className="lg:text-[60px] md:text-[40px] text-[30px] font-semibold font-Montserrat mb-[20px] text-[#C6AB64]">
