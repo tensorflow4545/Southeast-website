@@ -40,7 +40,7 @@ export default function Music(){
                     <div className="flex flex-col gap-[40px] mt-[180px]">
                     {music.map((element,index)=>{
                     return(
-                    <div className="max-w-screen h-[450px] rounded-[20px] flex items-center gap-[40px]">
+                    <div key={index} className="max-w-screen h-[450px] rounded-[20px] flex items-center gap-[40px]">
                        <div className="basis-5/6"><div className="w-full h-[450px] relative">
                          <Image src={element.img} alt="Image" fill></Image>
                          <div className="flex flex-row absolute inset-0 bg-black opacity-50 rounded-[42px]"></div>
