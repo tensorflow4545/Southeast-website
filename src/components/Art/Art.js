@@ -31,13 +31,13 @@ export default function Music(){
     ];
     return(
         <>
-            <div className="w-full h-max lg:px-[50px] px-[20px] lg:mt-[130px] mt-[100px] pb-[20px] bg-[#FFFFFF]">
+            <div className="w-full h-max lg:px-[50px] px-[20px] lg:mt-[100px] mt-[100px] pb-[20px] bg-[#FFFFFF]">
               <div className="flex lg:gap-[100px] md:gap-[20px]">
                 <div className="basis-1/5"><Sidebar/></div>
 
                 <div className="basis-4/5 lg:ml-[50px] ml-[120px]">
                     <Head/>
-                    <div className="flex flex-col gap-[40px] lg:mt-[180px] mt-[100px]">
+                    <div className="flex flex-col gap-[40px] lg:mt-[150px] mt-[100px]">
                     {music.map((element,index)=>{
                     return(
                     <div key={index} className="max-w-screen h-[450px] rounded-[20px] flex items-center gap-[40px]">
@@ -47,7 +47,7 @@ export default function Music(){
                             {/* inner flex author info */}
                             <div className="w-full flex flex-row absolute  px-[30px] py-[20px]">
                             <div className="basis-4/5 flex gap-[30px]">
-                            <div className="lg:w-[60px] w-[40px] lg:h-[60px] h-[40px] relative z-[20]"><Image src={element.authorimg} alt="Author Image" fill></Image></div>
+                            <div className="lg:w-[60px] w-[40px] lg:h-[60px] h-[40px] relative"><Image src={element.authorimg} alt="Author Image" fill></Image></div>
                             <div className="lg:text-[32px] text-[24px] text-[#FFFFFF] font-medium font-Klee">{element.author}</div>
                             </div>
                             {/* button */}
