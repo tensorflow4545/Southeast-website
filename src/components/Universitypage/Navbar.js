@@ -5,7 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 export default function Auth(){
     return(
         <>
-            <div className="w-full h-max lg:px-[50px] md:px-[30px] px-[20px] lg:py-[20px] md:py-[20px] py-[20px] bg-[#FFFFFF] bg-opacity-75">
+            <div className="w-full h-max lg:px-[50px] md:px-[30px] px-[20px] lg:py-[20px] md:py-[20px] py-[20px] bg-[#FFFFFF] z-[20] fixed">
 
             <div className="flex flex-row">
               <div className="basis-1/2 flex flex-row">
