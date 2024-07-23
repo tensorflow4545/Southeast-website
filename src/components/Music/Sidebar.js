@@ -11,7 +11,7 @@ export default function Sidebar(){
     const [button , selectbutton]=useState(1);
     return(
         <>
-            <div className="lg:w-[294px] md:w-[200px] h-max rounded-[20px] bg-[#F0F0F0] lg:px-[60px] px-[10px] py-[10px] mt-[50px] fixed">
+            <div className="lg:w-max md:w-[200px] h-max rounded-[20px] bg-[#F0F0F0] lg:px-[60px] px-[10px] py-[10px] mt-[40px] fixed">
                 {/* routes */}
                <Link href={"/music"} onClick={()=>{selectbutton(1)}}><div className="flex items-center justify-start gap-[25px] my-[15px] delay-100 duration-500 transition hover:scale-105">
                 <div className="w-[29px] h-[29px] relative"><Image src={headphone} alt="Routes" fill></Image></div>
