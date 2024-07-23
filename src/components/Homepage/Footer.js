@@ -27,9 +27,9 @@ export default function Footer(){
               <div className="basis-2/3">
               <p className="text-[30px] text-white font-Montserrat font-medium mb-[20px]">Have a query ?</p>
               <div className="flex">
-              <input placeholder="Email Us" for="email" class="lg:w-[344px] md:w-[300px] h-[49px] px-[15px] mb-2 text-[20px] font-Montserrat bg-white text-[#646464] dark:text-white flex items-center justify-start rounded-md"/>
+              <input placeholder="Email Us" for="email" class="lg:w-[295px] md:w-[300px] h-[49px] px-[15px] mb-2 text-[20px] font-Montserrat bg-white text-[#646464] dark:text-white flex items-center justify-start rounded-md"/>
               {/* button */}
-              <button className="lg:w-[116px] md:w-[100px] w-[100px] h-[49px] bg-[#C6AB64] text-white text-[20px] flex items-center justify-center ml-[10px] rounded-lg shadow-md hover:shadow-lg font-Montserrat">
+              <button className="lg:w-[100px] md:w-[100px] w-[100px] h-[49px] bg-[#C6AB64] text-white lg:text-[20px] md:text-[20px] text-[]18px] flex items-center justify-center ml-[10px] rounded-lg shadow-md hover:shadow-lg font-Montserrat">
               Send
                         
               </button>
