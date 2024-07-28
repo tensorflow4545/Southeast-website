@@ -4,7 +4,7 @@ import React from 'react';
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
 import './styles.css'; // Make sure to import your CSS file
-
+import { IoCloseOutline } from "react-icons/io5";
 export default function MusicPlayer({ track, title, author, onClose }) {
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-white p-4 shadow-lg flex items-center justify-between">
@@ -30,7 +30,7 @@ export default function MusicPlayer({ track, title, author, onClose }) {
         layout="horizontal-reverse"
         className="h5-audio-player"
       />
-      <button onClick={onClose} className="ml-4 text-red-500">Close</button>
+      <button onClick={onClose} className="ml-4 text-black text-[20px]"><IoCloseOutline /></button>
     </div>
   );
 }
