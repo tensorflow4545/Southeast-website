@@ -4,6 +4,8 @@ import ellipse1 from "@/assets/authenticate/ellipse1.png";
 import ellipse2 from "@/assets/authenticate/ellipse2.png";
 import ellipse3 from "@/assets/authenticate/ellipse3.png";
 import ellipse4 from "@/assets/authenticate/ellipse4.png";
+import Link from "next/link";
+
 export default function Signupteacher(){
     return(
         <>
@@ -98,7 +100,8 @@ export default function Signupteacher(){
                             Login
                             
                 </button></div>
-                <p className="text-[22px] text-[#FFFFFF] font-Montserrat font-medium text-center">Already a user ?<button className="text-[#C6AB64]">login.</button> </p>
+                <Link href='/signin'>
+                <p className="text-[22px] text-[#FFFFFF] font-Montserrat font-medium text-center">Already a user ?<button className="text-[#C6AB64]">Login.</button> </p></Link>
               </form>
             </div>
             </div>
