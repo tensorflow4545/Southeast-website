@@ -48,7 +48,9 @@ export default function Signin(){
                             Login
                             
                 </button></div>
-                <p className="text-[22px] text-[#FFFFFF] font-Montserrat font-medium text-center">Forgot password?</p>
+                
+                <p className="text-[22px] text-[#FFFFFF] font-Montserrat font-medium text-center"> <button href='/homepage'>Forgot password? </button></p>
+                
               </form>
             </div>
             </div>
