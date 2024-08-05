@@ -8,7 +8,7 @@ import pen from "@/assets/Music/pen.png";
 import edit from "@/assets/Music/edit.png";
 import book from "@/assets/Music/book.png"; 
 export default function Sidebar(){
-    const [button , selectbutton]=useState(1);
+    const [button , selectbutton]=useState(5);
     return(
         <>
             <div className="lg:w-max md:w-[200px] h-max rounded-[20px] bg-[#F0F0F0] lg:px-[60px] px-[10px] py-[10px] mt-[40px] fixed">

@@ -1,4 +1,4 @@
-import Sidebar from "../Podcast/Sidebar";
+import Sidebar from "./Sidebar";
 import Image from "next/image";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaPlus } from "react-icons/fa6";
