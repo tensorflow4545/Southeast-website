@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Logo from "@/assets/Homepage/logo.png";
+import Link from "next/link";
 export default function Navbar(){
     return(
         <>
@@ -13,7 +14,8 @@ export default function Navbar(){
               </div>
               <div className="basis-1/2">
                <div className="flex flex-row-reverse items-center gap-[40px] lg:mt-[20px] md:mt-[15px] mt-[15px]">
-                <buttton className="lg:text-[32px] md:text-[28px] text-[20px] text-[#C6AB64] font-Klee">Dive in</buttton>
+                <Link href='/signup'>
+                <buttton className="lg:text-[32px] md:text-[28px] text-[20px] text-[#C6AB64] font-Klee">Dive in</buttton></Link>
                 <button className="lg:text-[32px] md:text-[28px] text-[20px] text-[#C6AB64] font-Klee">About us</button>
                </div>
               </div>
