@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Sidebar from "../Podcast/Sidebar";
+import Sidebar from "./Sidebar";
 import { IoIosArrowDown } from "react-icons/io";
 
 export default function Hero() {

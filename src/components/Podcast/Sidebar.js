@@ -8,7 +8,7 @@ import pen from "@/assets/Music/pen.png";
 import edit from "@/assets/Music/edit.png";
 import book from "@/assets/Music/book.png"; 
 export default function Sidebar(){
-    const [button , selectbutton]=useState(1);
+    const [button , selectbutton]=useState(2);
     return(
         <>
             <div className="lg:w-max md:w-[200px] h-max rounded-[20px] bg-[#F0F0F0] lg:px-[60px] px-[10px] py-[10px] mt-[40px] fixed">
@@ -37,7 +37,7 @@ export default function Sidebar(){
                </div></Link>
 
                {/* routes */}
-               <Link href={"#"} onClick={()=>{selectbutton(4)}}><div className="flex items-center justify-start gap-[25px] my-[15px] delay-100 duration-500 transition hover:scale-105">
+               <Link href={"/notes"} onClick={()=>{selectbutton(4)}}><div className="flex items-center justify-start gap-[25px] my-[15px] delay-100 duration-500 transition hover:scale-105">
                 <div className="w-[29px] h-[29px] relative"><Image src={edit} alt="Routes" fill></Image></div>
                 <div><div className="text-[32px] text-[#000000] font-Klee font-medium">Notes</div>
                 <div className={`w-[90px] h-[4px] bg-[#C6AB64] ${button==4?" ":"hidden"}`}></div>
@@ -45,7 +45,7 @@ export default function Sidebar(){
                </div></Link>
 
                {/* routes */}
-               <Link href={"#"} onClick={()=>{selectbutton(5)}}><div className="flex items-center justify-start gap-[25px] my-[15px] delay-100 duration-500 transition hover:scale-105">
+               <Link href={"/books"} onClick={()=>{selectbutton(5)}}><div className="flex items-center justify-start gap-[25px] my-[15px] delay-100 duration-500 transition hover:scale-105">
                 <div className="w-[29px] h-[29px] relative"><Image src={book} alt="Routes" fill></Image></div>
                 <div><div className="text-[32px] text-[#000000] font-Klee font-medium">Books</div>
                 <div className={`w-[90px] h-[4px] bg-[#C6AB64] ${button==5?" ":"hidden"}`}></div>
