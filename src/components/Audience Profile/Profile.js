@@ -1,10 +1,18 @@
+"use client";
+import { useState } from "react";
 import Sidebar from "./Sidebar";
 import musicimg from "@/assets/Music/musicimg.png";
 import author from "@/assets/Music/author.png";
+import Popup from "./Contact";
 import Image from "next/image";
 export default function Profile(){
+  const [showmodal,setshowmodal]=useState(false);
+  const handleshow = ()=>{
+    setshowmodal(!showmodal);
+  }
     return(
         <>
+            {showmodal && <Popup handleshow={handleshow}/>}
             <div className="w-full h-max lg:px-[50px] px-[20px] lg:mt-[100px] mt-[100px] pb-[20px] bg-[#FFFFFF]">
               <div className="flex lg:gap-[100px] md:gap-[20px]">
                 <div className="basis-1/5"><Sidebar/></div>
@@ -32,7 +40,8 @@ export default function Profile(){
                        </div>
 
                        {/* button */}
-                       <div className="w-max h-[53px] px-[20px] py-[5px] lg:text-[30px] text-[20px] text-[#FFC700] font-Klee font-medium bg-white border-[1px] border-[#FFC700] rounded-[20px] flex items-center justify-center">
+                       <div className="w-max h-[53px] px-[20px] py-[5px] lg:text-[30px] text-[20px] text-[#FFC700] font-Klee font-medium bg-white border-[1px] border-[#FFC700] rounded-[20px] flex items-center justify-center"
+                       onClick={handleshow}>
                        Contact 
                        </div>
                        </div>
