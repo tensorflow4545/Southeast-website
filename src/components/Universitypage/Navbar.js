@@ -10,9 +10,9 @@ export default function Auth(){
 
             <div className="flex flex-row">
               <div className="basis-1/2 flex flex-row">
-               <div className="lg:w-[295px] md:w-[200px] w-[150px] lg:h-[103px] md:h-[90px] h-[60px] relative">
+               <Link href={"/"}><div className="lg:w-[295px] md:w-[200px] w-[150px] lg:h-[103px] md:h-[90px] h-[60px] relative">
                 <Image src={Logo} alt="Logo Image" fill></Image>
-               </div>
+               </div></Link>
                <Link href={"/"}><div className="lg:text-[22px] md:text-[20px] text-[18px] text-[#000000] font-Klee font-semibold lg:mt-[30px] md:mt-[20px] sm:mt-[20px] ml-[10px] lg:grid hidden">Home</div></Link>
               </div>
               <div className="basis-1/2">
