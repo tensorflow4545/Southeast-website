@@ -2,6 +2,7 @@ import Image from "next/image";
 import Logo from "@/assets/Homepage/logo1.png";
 import { FaRegBell,FaSearch } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
+import Link from "next/link";
 export default function Auth(){
     return(
         <>
@@ -12,7 +13,7 @@ export default function Auth(){
                <div className="lg:w-[295px] md:w-[200px] w-[150px] lg:h-[103px] md:h-[90px] h-[60px] relative">
                 <Image src={Logo} alt="Logo Image" fill></Image>
                </div>
-               <div className="lg:text-[22px] md:text-[20px] text-[18px] text-[#000000] font-Klee font-semibold lg:mt-[30px] md:mt-[20px] sm:mt-[20px] ml-[10px] lg:grid hidden">Home</div>
+               <Link href={"/"}><div className="lg:text-[22px] md:text-[20px] text-[18px] text-[#000000] font-Klee font-semibold lg:mt-[30px] md:mt-[20px] sm:mt-[20px] ml-[10px] lg:grid hidden">Home</div></Link>
               </div>
               <div className="basis-1/2">
                <div className="flex items-center gap-[40px] lg:mt-[20px] md:mt-[15px]">
