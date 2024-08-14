@@ -4,6 +4,7 @@ import detail2 from "@/assets/Homepage/about2.png";
 import detail3 from "@/assets/Homepage/about3.png";
 import detail4 from "@/assets/Homepage/about4.png";
 import detail5 from "@/assets/Homepage/about5.png";
+import Link from "next/link";
 export default function About(){
     return(
         <>
@@ -102,10 +103,10 @@ export default function About(){
             <div className="lg:text-[60px] md:text-[40px] text-[30px] text-white font-bold font-Montserrat text-center mt-[30px]">Elevate <span className="text-[#C6AB64]">Your Expertise,</span> Empower <span className="text-[#C6AB64]">Others.</span></div>
             
             {/* button */}
-            <div className="w-full flex items-center justify-center mb-[80px]"><button className="lg:w-[201px] md:w-[150px] w-[100px] h-[52px] bg-[#C6AB64] text-white text-[20px] flex items-center justify-center mt-[30px] rounded-lg shadow-md hover:shadow-lg font-Montserrat">
+            <Link href={"/signup"}><div className="w-full flex items-center justify-center mb-[80px]"><button className="lg:w-[201px] md:w-[150px] w-[100px] h-[52px] bg-[#C6AB64] text-white text-[20px] flex items-center justify-center mt-[30px] rounded-lg shadow-md hover:shadow-lg font-Montserrat">
                         SIGN UP
                         
-              </button></div>
+              </button></div></Link>
             </div>
         </>
     )

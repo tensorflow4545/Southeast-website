@@ -63,28 +63,28 @@ export default function Sidebar(){
                <div className="text-[30px] text-[#646464] font-Montserrat text-center"><span className="text-[#C6AB64]">UNI</span>-BLOCK</div>
 
                {/* Universities */}
-               <div className="flex flex-row items-center justify-start lg:gap-[10px] gap-[5px] mt-[20px]">
+               <Link href={"/university"}><div className="flex flex-row items-center justify-start lg:gap-[10px] gap-[5px] mt-[20px]">
                 <div className="w-[51px] h-[50px] relative"><Image src={vitap} fill alt="College image"></Image></div>
                 <div className="text-[20px] text-[#646464] font-Klee">VIT-AP </div>
-               </div>
+               </div></Link>
 
                 {/* Universities */}
-                <div className="flex flex-row items-center justify-start lg:gap-[10px] gap-[5px] mt-[20px]">
+                <Link href={"/university"}><div className="flex flex-row items-center justify-start lg:gap-[10px] gap-[5px] mt-[20px]">
                 <div className="w-[51px] h-[50px] relative"><Image src={srm} fill alt="College image"></Image></div>
                 <div className="text-[20px] text-[#646464] font-Klee">SRM University</div>
-               </div>
+               </div></Link>
 
                 {/* Universities */}
-                <div className="flex flex-row items-center justify-start lg:gap-[10px] gap-[5px] mt-[20px]">
+                <Link href={"/university"}><div className="flex flex-row items-center justify-start lg:gap-[10px] gap-[5px] mt-[20px]">
                 <div className="w-[51px] h-[50px] relative"><Image src={klm} fill alt="College image"></Image></div>
                 <div className="text-[20px] text-[#646464] font-Klee">KL University</div>
-               </div>
+               </div></Link>
 
                 {/* Universities */}
-                <div className="flex flex-row items-center justify-start lg:gap-[10px] gap-[5px] mt-[20px]">
+                <Link href={"/university"}><div className="flex flex-row items-center justify-start lg:gap-[10px] gap-[5px] mt-[20px]">
                 <div className="w-[51px] h-[50px] relative"><Image src={siddh} fill alt="College image"></Image></div>
                 <div className="text-[20px] text-[#646464] font-Klee">V.R.Siddhartha</div>
-               </div>
+               </div></Link>
 
             </div>
 
