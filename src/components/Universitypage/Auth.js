@@ -2,7 +2,7 @@ export default function Auth(){
     return(
         <>
             <div className="w-full h-max bg-[#FFFFFF] px-[20px]">
-            <div className="flex justify-center"><div className="w-[721px] h-max bg-[#A1A1A138] bg-opacity-20 py-[20px] px-[20px] rounded-lg">
+            <div className="flex justify-center"><div className="w-[721px] h-max bg-[#A1A1A138] bg-opacity-20 py-[20px] px-[20px] rounded-lg mt-[200px]">
                <div className="text-[40px] text-[#646464] font-Klee text-center mb-[80px]">Authentication</div>
                <form>
                   {/* Input */}

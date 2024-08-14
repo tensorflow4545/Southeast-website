@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Heroimg from "@/assets/Homepage/hero.png";
+import Link from "next/link";
 export default function Hero(){
     return(
         <>
@@ -18,10 +19,10 @@ export default function Hero(){
                                                                                  teaching, and every individual is a mentor in the making.</p>
               
               {/* button */}
-              <div className="lg:w-[150px] md:w-[150px] w-[100px] h-[44px] bg-[#000000] border-[2px] border-[#C6AB64] text-[#C6AB64] font-Klee text-[18px] flex items-center justify-center mt-[30px] rounded-lg shadow-md hover:text-[#000000] hover:shadow-lg hover:bg-[#C6AB64] transition hover:ease-in delay-150 duration-400">
+              <Link href={"/signup"}><div className="lg:w-[150px] md:w-[150px] w-[100px] h-[44px] bg-[#000000] border-[2px] border-[#C6AB64] text-[#C6AB64] font-Klee text-[18px] flex items-center justify-center mt-[30px] rounded-lg shadow-md hover:text-[#000000] hover:shadow-lg hover:bg-[#C6AB64] transition hover:ease-in delay-150 duration-400">
                         Dive in
                         
-              </div>
+              </div></Link>
               
               </div>
               {/* child */}
