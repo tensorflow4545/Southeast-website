@@ -1,11 +1,19 @@
+"use client";
+import { useState } from "react";
 import Sidebar from "../Podcast/Sidebar";
 import Image from "next/image";
+import Popup from "./samplebook"
 import { IoIosArrowDown } from "react-icons/io";
 import { FaPlus } from "react-icons/fa6";
 import read from "@/assets/read/read.png";
 export default function Hero(){
+    const [showmodal,setshowmodal]=useState(false);
+    const handleshow = ()=>{
+      setshowmodal(!showmodal);
+    }
     return(
         <>
+             {showmodal && <Popup handleshow={handleshow}/>}
             <div className="relative">
             
             <div className="w-full h-max lg:px-[50px] px-[20px] lg:mt-[100px] mt-[100px] pb-[20px] bg-[#FFFFFF] absolute">
@@ -38,7 +46,8 @@ export default function Hero(){
                     <div className=" w-full h-[91px] bg-[#D0D0D0] border-[1px] border-black rounded-[20px] flex items-center justify-center mb-[30px] shadow-lg">
                     <div className="lg:text-[30px] text-[25px] text-[#646464] font-Klee font-normal basis-1/2 lg:ml-[50px] ml-[20px]">Chapter 1</div>
                     {/* button */}
-                    <div className="w-full h-full flex items-center justify-end basis-1/2 mr-[20px]"><button className="lg:w-[201px] md:w-[150px] w-[100px] h-[52px] bg-[#C6AB64] text-white text-[20px] flex items-center justify-center rounded-lg shadow-md hover:shadow-lg font-Klee">
+                    <div className="w-full h-full flex items-center justify-end basis-1/2 mr-[20px]"><button className="lg:w-[201px] md:w-[150px] w-[100px] h-[52px] bg-[#C6AB64] text-white text-[20px] flex items-center justify-center rounded-lg shadow-md hover:shadow-lg font-Klee"
+                    onClick={handleshow}>
                         Read More
                     </button></div>
                     </div>
@@ -47,7 +56,8 @@ export default function Hero(){
                     <div className=" w-full h-[91px] bg-[#D0D0D0] border-[1px] border-black rounded-[20px] flex items-center justify-center mb-[30px] shadow-lg">
                     <div className="lg:text-[30px] text-[25px] text-[#646464] font-Klee font-normal basis-1/2 lg:ml-[50px] ml-[20px]">Chapter 1</div>
                     {/* button */}
-                    <div className="w-full h-full flex items-center justify-end basis-1/2 mr-[20px]"><button className="lg:w-[201px] md:w-[150px] w-[100px] h-[52px] bg-[#C6AB64] text-white text-[20px] flex items-center justify-center rounded-lg shadow-md hover:shadow-lg font-Klee">
+                    <div className="w-full h-full flex items-center justify-end basis-1/2 mr-[20px]"><button className="lg:w-[201px] md:w-[150px] w-[100px] h-[52px] bg-[#C6AB64] text-white text-[20px] flex items-center justify-center rounded-lg shadow-md hover:shadow-lg font-Klee"
+                    onClick={handleshow}>
                         Read More
                     </button></div>
                     </div>
@@ -56,7 +66,8 @@ export default function Hero(){
                     <div className=" w-full h-[91px] bg-[#D0D0D0] border-[1px] border-black rounded-[20px] flex items-center justify-center mb-[30px] shadow-lg">
                     <div className="lg:text-[30px] text-[25px] text-[#646464] font-Klee font-normal basis-1/2 lg:ml-[50px] ml-[20px]">Chapter 1</div>
                     {/* button */}
-                    <div className="w-full h-full flex items-center justify-end basis-1/2 mr-[20px]"><button className="lg:w-[201px] md:w-[150px] w-[100px] h-[52px] bg-[#C6AB64] text-white text-[20px] flex items-center justify-center rounded-lg shadow-md hover:shadow-lg font-Klee">
+                    <div className="w-full h-full flex items-center justify-end basis-1/2 mr-[20px]"><button className="lg:w-[201px] md:w-[150px] w-[100px] h-[52px] bg-[#C6AB64] text-white text-[20px] flex items-center justify-center rounded-lg shadow-md hover:shadow-lg font-Klee"
+                    onClick={handleshow}>
                         Read More
                     </button></div>
                     </div>
