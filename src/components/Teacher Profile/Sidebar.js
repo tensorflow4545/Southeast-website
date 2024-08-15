@@ -12,7 +12,7 @@ export default function Sidebar(){
     return(
         <>  
         <div className="mt-[40px] fixed">
-            <div className="lg:w-[270px] w-[200px] h-max rounded-[20px] bg-[#F0F0F0] lg:px-[60px] px-[10px] py-[10px] ">
+            <div className="lg:w-[270px] w-[200px] h-max rounded-[20px] bg-[#F0F0F0] lg:px-[30px] px-[10px] py-[10px] ">
                 {/* routes */}
                <Link href={"/music"} onClick={()=>{selectbutton(1)}}><div className="flex items-center justify-start gap-[25px] my-[15px] delay-100 duration-500 transition hover:scale-105">
                 <div className="w-[29px] h-[29px] relative"><Image src={headphone} alt="Routes" fill></Image></div>

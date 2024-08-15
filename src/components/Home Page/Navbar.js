@@ -32,9 +32,12 @@ export default function Auth() {
           </div>
           <div className="basis-1/2 mt-[20px]">
             <div className="flex flex-row justify-end items-start gap-[20px]">
-              <div className="lg:text-[22px] md:text-[20px] text-[18px] text-[#000000] font-Klee font-bold mt-[15px] ml-[10px]">
+              <Link href={"/signupteacher"}><div className="lg:text-[22px] md:text-[20px] text-[18px] text-[#000000] font-Klee font-bold mt-[15px] ml-[10px]">
+                Teach now
+              </div></Link>
+              <Link href={"/"}><div className="lg:text-[22px] md:text-[20px] text-[18px] text-[#000000] font-Klee font-bold mt-[15px] ml-[10px]">
                 Home
-              </div>
+              </div></Link>
               <FaRegBell className="lg:size-[20px] size-[15px] lg:mt-[20px] md:mt-[10px] ml-[10px]" />
               <div className="flex flex-row relative">
                 <div className="lg:w-[70px] md:w-[60px] w-[50px] lg:h-[70px] md:h-[60px] h-[50px] rounded-full bg-gray-300"></div>

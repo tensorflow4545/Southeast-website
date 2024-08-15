@@ -5,6 +5,7 @@ import { FaPlus } from "react-icons/fa6";
 export default function Hero(){
     return(
         <>
+           
             <div className="relative">
             
             <div className="w-full h-max lg:px-[50px] px-[20px] lg:mt-[100px] mt-[100px] pb-[20px] bg-[#FFFFFF] absolute">
