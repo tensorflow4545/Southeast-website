@@ -4,6 +4,7 @@ import ellipse1 from "@/assets/authenticate/ellipse1.png";
 import ellipse2 from "@/assets/authenticate/ellipse2.png";
 import ellipse3 from "@/assets/authenticate/ellipse3.png";
 import ellipse4 from "@/assets/authenticate/ellipse4.png";
+import Link from "next/link";
 
 export default function Signupteacher() {
   return (
@@ -102,11 +103,13 @@ export default function Signupteacher() {
                   />
                 </div>
                 {/* button */}
+                <Link href={"/teacherprofile"}>
                 <div className="w-full flex items-center justify-center mb-[40px]">
                   <button className="lg:w-[201px] md:w-[150px] w-[100px] h-[52px] bg-[#C6AB64] text-white text-[20px] flex items-center justify-center mt-[30px] rounded-[20px] shadow-md hover:shadow-lg font-medium font-Montserrat">
                     Login
                   </button>
                 </div>
+                </Link>
                 <p className="text-[22px] text-[#FFFFFF] font-Montserrat font-medium text-center">
                   Forgot password?
                 </p>
