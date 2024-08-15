@@ -18,9 +18,9 @@ export default function Auth() {
       <div className="w-full h-max lg:px-[50px] md:px-[30px] px-[20px] lg:py-[20px] md:py-[20px] py-[20px] bg-[#FFFFFF] fixed z-30">
         <div className="flex flex-row">
           <div className="basis-1/2 flex flex-row gap-[30px]">
-            <div className="lg:w-[295px] md:w-[200px] w-[150px] lg:h-[103px] md:h-[90px] h-[60px] relative">
+            <Link href={"/"}><div className="lg:w-[295px] md:w-[200px] w-[150px] lg:h-[103px] md:h-[90px] h-[60px] relative">
               <Image src={Logo} alt="Logo Image" fill></Image>
-            </div>
+            </div></Link>
             <div className="relative mt-[30px]">
               <input
                 type="text"
