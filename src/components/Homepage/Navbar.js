@@ -15,8 +15,8 @@ export default function Navbar(){
               <div className="basis-1/2">
                <div className="flex flex-row-reverse items-center gap-[40px] lg:mt-[20px] md:mt-[15px] mt-[15px]">
                 <Link href='/signup'>
-                <buttton className="lg:text-[32px] md:text-[28px] text-[20px] text-[#C6AB64] font-Klee">Dive in</buttton></Link>
-                <button className="lg:text-[32px] md:text-[28px] text-[20px] text-[#C6AB64] font-Klee">About us</button>
+                <buttton className="lg:text-[25px] md:text-[28px] text-[20px] text-[#C6AB64] font-Klee">Dive in</buttton></Link>
+                <button className="lg:text-[25px] md:text-[28px] text-[20px] text-[#C6AB64] font-Klee">About us</button>
                </div>
               </div>
             </div>

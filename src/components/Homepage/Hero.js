@@ -9,7 +9,7 @@ export default function Hero(){
             <div className="lg:grid md:grid lg:grid-cols-2 md:grid-cols-2 lg:mt-[150px] md:mt-[100px] mt-[100px]">
               {/* child */}
               <div className="lg:mt-[80px] md:mt-[40px]">
-              <h1 className="lg:text-[60px] md:text-[40px] text-[30px] font-semibold font-Montserrat mb-[20px] text-[#C6AB64]">
+              <h1 className="lg:text-[35px] md:text-[40px] text-[30px] font-semibold font-Montserrat mb-[20px] text-[#C6AB64]">
               Unleash your <span className="text-white">talent,</span> <span className="text-white">Share</span> your skill.
               </h1>
 
@@ -27,7 +27,7 @@ export default function Hero(){
               </div>
               {/* child */}
               <div className="md:w-full md:h-max flex lg:justify-end justify-center">
-               <div className="lg:w-[500px] md:w-[400px] sm:w-[400px] w-full lg:h-[500px] md:h-[500px] h-[500px] relative"><Image src={Heroimg} alt="Image" fill></Image></div>
+               <div className="lg:w-[500px] md:w-[400px] sm:w-[400px] w-full lg:h-[400px] md:h-[500px] h-[500px] relative"><Image src={Heroimg} alt="Image" fill></Image></div>
               </div>
               </div>
 
