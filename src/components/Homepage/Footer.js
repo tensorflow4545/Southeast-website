@@ -1,3 +1,4 @@
+import Link from "next/link"
 export default function Footer(){
     return(
         <>
@@ -16,12 +17,12 @@ export default function Footer(){
               <div className="basis-1/3">
                 <ul>
                    <p className="text-[30px] text-[#FFFFFF] font-Klee pb-[20px]">Quick links</p> 
-                   <li className="lg:text-[22px] md:text-[20px] text-[18px] text-[#646464] text-justify font-Klee pb-[10px]">Dive in</li>
-                   <li className="lg:text-[22px] md:text-[20px] text-[18px] text-[#646464] text-justify font-Klee pb-[10px]">Music</li>
-                   <li className="lg:text-[22px] md:text-[20px] text-[18px] text-[#646464] text-justify font-Klee pb-[10px]">Artistry</li>
-                   <li className="lg:text-[22px] md:text-[20px] text-[18px] text-[#646464] text-justify font-Klee pb-[10px]">Podcasts</li>
-                   <li className="lg:text-[22px] md:text-[20px] text-[18px] text-[#646464] text-justify font-Klee pb-[10px]">Notes</li>
-                   <li className="lg:text-[22px] md:text-[20px] text-[18px] text-[#646464] text-justify font-Klee">DBooks</li>
+                   <Link href={"/signin"}><li className="lg:text-[22px] md:text-[20px] text-[18px] text-[#646464] text-justify font-Klee pb-[10px]">Dive in</li></Link>
+                   <Link href={"/music"}><li className="lg:text-[22px] md:text-[20px] text-[18px] text-[#646464] text-justify font-Klee pb-[10px]">Music</li></Link>
+                   <Link href={"/art"}><li className="lg:text-[22px] md:text-[20px] text-[18px] text-[#646464] text-justify font-Klee pb-[10px]">Artistry</li></Link>
+                   <Link href={"/podcast"}><li className="lg:text-[22px] md:text-[20px] text-[18px] text-[#646464] text-justify font-Klee pb-[10px]">Podcasts</li></Link>
+                   <Link href={"/notes"}><li className="lg:text-[22px] md:text-[20px] text-[18px] text-[#646464] text-justify font-Klee pb-[10px]">Notes</li></Link>
+                   <Link href={"/books"}><li className="lg:text-[22px] md:text-[20px] text-[18px] text-[#646464] text-justify font-Klee">Books</li></Link>
                 </ul>
               </div>
               <div className="basis-2/3">

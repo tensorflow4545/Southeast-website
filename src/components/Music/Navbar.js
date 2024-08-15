@@ -5,7 +5,7 @@ import Logo from "@/assets/Homepage/logo1.png";
 import { useState } from "react";
 import { FaRegBell, FaSearch } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
-
+import Link from "next/link";
 export default function Auth() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -45,10 +45,10 @@ export default function Auth() {
                 {isDropdownOpen && (
                   <div className="absolute top-[100%] right-0 mt-2 w-[150px] bg-white border border-gray-300 rounded-lg shadow-lg z-10">
                     <ul className="py-1">
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Profile</li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Payments</li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Support</li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Sign out</li>
+                      <Link href={"/profile"}><li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Profile</li></Link>
+                      <Link href={"/payment"}><li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Payments</li></Link>
+                      <Link href={"/contactus"}><li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Support</li></Link>
+                      <Link href={"/signin"}><li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Sign out</li></Link>
                     </ul>
                   </div>
                 )}

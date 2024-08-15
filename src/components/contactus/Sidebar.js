@@ -18,13 +18,13 @@ export default function Sidebar(){
         </div>
             <div className="lg:w-max md:w-[200px] h-max rounded-[20px] bg-white lg:px-[60px] px-[10px] py-[10px] mt-[50px]">
                 {/* routes */}
-               <Link href={"#"} onClick={()=>{selectbutton(1)}}><div className="flex items-center justify-start gap-[25px] my-[20px] delay-100 duration-500 transition hover:scale-105">
+               <Link href={"/audienceprofile"} onClick={()=>{selectbutton(1)}}><div className="flex items-center justify-start gap-[25px] my-[20px] delay-100 duration-500 transition hover:scale-105">
                 <div><div className={`text-[28px]  ${button==1?"text-[#C6AB64]":"text-[#000000]"} font-Klee font-medium`}>Profile</div>
                 </div>
                </div></Link>
 
                {/* routes */}
-               <Link href={"#"} onClick={()=>{selectbutton(2)}}><div className="flex items-center justify-start gap-[25px] my-[20px] delay-100 duration-500 transition hover:scale-105">
+               <Link href={"/payment"} onClick={()=>{selectbutton(2)}}><div className="flex items-center justify-start gap-[25px] my-[20px] delay-100 duration-500 transition hover:scale-105">
                 <div><div className={`text-[28px]  ${button==2?"text-[#C6AB64]":"text-[#000000]"} font-Klee font-medium`}>Payments</div>
                 </div>
                </div></Link>

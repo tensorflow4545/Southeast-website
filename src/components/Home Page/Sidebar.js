@@ -26,7 +26,7 @@ export default function Sidebar(){
                </div></Link>
 
                {/* routes */}
-               <Link href={"#"} onClick={()=>{selectbutton(2)}}><div className="flex items-center justify-start gap-[25px] my-[15px] delay-100 duration-500 transition hover:scale-105">
+               <Link href={"/podcast"} onClick={()=>{selectbutton(2)}}><div className="flex items-center justify-start gap-[25px] my-[15px] delay-100 duration-500 transition hover:scale-105">
                 <div className="w-[29px] h-[29px] relative"><Image src={mic} alt="Routes" fill></Image></div>
                 <div><div className="text-[32px] text-[#000000] font-Klee font-medium">Podcasts</div>
                 <div className={`w-[140px] h-[4px] bg-[#C6AB64] ${button==2?" ":"hidden"}`}></div>
@@ -34,7 +34,7 @@ export default function Sidebar(){
                </div></Link>
 
                {/* routes */}
-               <Link href={"#"} onClick={()=>{selectbutton(3)}}><div className="flex items-center justify-start gap-[25px] my-[15px] delay-100 duration-500 transition hover:scale-105">
+               <Link href={"/art"} onClick={()=>{selectbutton(3)}}><div className="flex items-center justify-start gap-[25px] my-[15px] delay-100 duration-500 transition hover:scale-105">
                 <div className="w-[29px] h-[29px] relative"><Image src={pen} alt="Routes" fill></Image></div>
                 <div><div className="text-[32px] text-[#000000] font-Klee font-medium">Art</div>
                 <div className={`w-[50px] h-[4px] bg-[#C6AB64] ${button==3?" ":"hidden"}`}></div>
@@ -42,7 +42,7 @@ export default function Sidebar(){
                </div></Link>
 
                {/* routes */}
-               <Link href={"#"} onClick={()=>{selectbutton(4)}}><div className="flex items-center justify-start gap-[25px] my-[15px] delay-100 duration-500 transition hover:scale-105">
+               <Link href={"/notes"} onClick={()=>{selectbutton(4)}}><div className="flex items-center justify-start gap-[25px] my-[15px] delay-100 duration-500 transition hover:scale-105">
                 <div className="w-[29px] h-[29px] relative"><Image src={edit} alt="Routes" fill></Image></div>
                 <div><div className="text-[32px] text-[#000000] font-Klee font-medium">Notes</div>
                 <div className={`w-[90px] h-[4px] bg-[#C6AB64] ${button==4?" ":"hidden"}`}></div>
@@ -50,7 +50,7 @@ export default function Sidebar(){
                </div></Link>
 
                {/* routes */}
-               <Link href={"#"} onClick={()=>{selectbutton(5)}}><div className="flex items-center justify-start gap-[25px] my-[15px] delay-100 duration-500 transition hover:scale-105">
+               <Link href={"/books"} onClick={()=>{selectbutton(5)}}><div className="flex items-center justify-start gap-[25px] my-[15px] delay-100 duration-500 transition hover:scale-105">
                 <div className="w-[29px] h-[29px] relative"><Image src={book} alt="Routes" fill></Image></div>
                 <div><div className="text-[32px] text-[#000000] font-Klee font-medium">Books</div>
                 <div className={`w-[90px] h-[4px] bg-[#C6AB64] ${button==5?" ":"hidden"}`}></div>
@@ -63,28 +63,28 @@ export default function Sidebar(){
                <div className="text-[30px] text-[#646464] font-Montserrat text-center"><span className="text-[#C6AB64]">UNI</span>-BLOCK</div>
 
                {/* Universities */}
-               <div className="flex flex-row items-center justify-start lg:gap-[10px] gap-[5px] mt-[20px]">
+               <Link href={"/university"}><div className="flex flex-row items-center justify-start lg:gap-[10px] gap-[5px] mt-[20px]">
                 <div className="w-[51px] h-[50px] relative"><Image src={vitap} fill alt="College image"></Image></div>
                 <div className="text-[20px] text-[#646464] font-Klee">VIT-AP </div>
-               </div>
+               </div></Link>
 
                 {/* Universities */}
-                <div className="flex flex-row items-center justify-start lg:gap-[10px] gap-[5px] mt-[20px]">
+                <Link href={"/university"}><div className="flex flex-row items-center justify-start lg:gap-[10px] gap-[5px] mt-[20px]">
                 <div className="w-[51px] h-[50px] relative"><Image src={srm} fill alt="College image"></Image></div>
                 <div className="text-[20px] text-[#646464] font-Klee">SRM University</div>
-               </div>
+               </div></Link>
 
                 {/* Universities */}
-                <div className="flex flex-row items-center justify-start lg:gap-[10px] gap-[5px] mt-[20px]">
+                <Link href={"/university"}><div className="flex flex-row items-center justify-start lg:gap-[10px] gap-[5px] mt-[20px]">
                 <div className="w-[51px] h-[50px] relative"><Image src={klm} fill alt="College image"></Image></div>
                 <div className="text-[20px] text-[#646464] font-Klee">KL University</div>
-               </div>
+               </div></Link>
 
                 {/* Universities */}
-                <div className="flex flex-row items-center justify-start lg:gap-[10px] gap-[5px] mt-[20px]">
+                <Link href={"/university"}><div className="flex flex-row items-center justify-start lg:gap-[10px] gap-[5px] mt-[20px]">
                 <div className="w-[51px] h-[50px] relative"><Image src={siddh} fill alt="College image"></Image></div>
                 <div className="text-[20px] text-[#646464] font-Klee">V.R.Siddhartha</div>
-               </div>
+               </div></Link>
 
             </div>
 
